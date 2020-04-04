@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+form.layout-settings {
+  display: table;
+}
+
+div.layout-settings {
+  display: table-row;
+}
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+input {
+  width: 5vw;
+}
+
+label {
+  padding-right: 10px;
+}
+
+img {
+  width: 14px;
+  height: auto;
+  padding-right: 5px;
+}
+
+table {
+  text-align: left;
+}
+
+#root {
+  width: 20vw;
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.9;
+}

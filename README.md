@@ -20,11 +20,7 @@ networkx.drawing.nx_agraph.write_dot(model.G, 'model_g.gv')
 networkx.drawing.nx_agraph.write_dot(model.Q, 'model_q.gv')
 ```
 
+## Web app
+Run with `npm run start`.
 
-## Viz libraries
-[VivaGraphJs](https://github.com/anvaka/VivaGraphJS)
-- [example](http://www.yasiv.com/graphs#Bai/rw5151)
-
-[GraphViz](https://graphviz.gitlab.io/about/)
-- [Wiki](https://en.wikipedia.org/wiki/Graphviz)
-
+Inspired by [yasiv.com](http://www.yasiv.com/graphs#).
