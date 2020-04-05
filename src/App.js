@@ -150,6 +150,13 @@ function App() {
             onChange={handleChange} />
         </div>
       ))}
+    <button name="layout-settings"
+      type="button"
+      onClick={() => setLayoutSettings(defaultLayout)}
+      >
+      Reset to default
+    </button>
+
     </form>
     )
 
