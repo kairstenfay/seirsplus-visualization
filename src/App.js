@@ -42,10 +42,15 @@ function App() {
     timeStep: "Default time step (dt) for forces integration",
   }
 
-  const [graph, setGraph] = useState(dot(constants.modelG))
+  const [graphName, setGraphName] = useState('modelG')
+  const [graph, setGraph] = useState(dot(constants[graphName]))
   const [layoutSettings, setLayoutSettings] = useState(defaultLayout)
   const [tooltipStyles, setTooltipStyles] = useState({display: "none"})
   const [tooltipText, setTooltipText] = useState()
+
+  useEffect(() => {
+    setGraph(dot(constants[graphName]))
+  }, [graphName])
 
   useEffect(() => {
     // The surefire way I know how to remove elements from the DOM by attribute
@@ -115,8 +120,8 @@ function App() {
           id="modelG"
           name="model"
           value="modelG"
-          defaultChecked
-          onChange={() => setGraph(dot(constants.modelG))} />
+          checked={graphName === 'modelG'}
+          onChange={() => setGraphName('modelG')} />
         <label htmlFor="modelG">Interaction (modelG)</label>
       </div>
 
@@ -125,7 +130,8 @@ function App() {
           id="modelQ"
           name="model"
           value="modelQ"
-          onChange={() => setGraph(dot(constants.modelQ))} />
+          checked={graphName === 'modelQ'}
+          onChange={() => setGraphName('modelQ')} />
         <label htmlFor="modelQ">Quarantine interaction (modelQ)</label>
       </div>
     </>
