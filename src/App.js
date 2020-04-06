@@ -79,7 +79,7 @@ function App() {
         </tr>
         <tr>
           <th>Edges:</th>
-          <td>{graph.getEdgesCount()}</td>
+          <td>{graph.getLinksCount()}</td>
         </tr>
       </tbody>
     </table>
