@@ -34,11 +34,11 @@ function App() {
     springLength: "Ideal length for links (springs in physical model) in pixels.",
     springCoeff: "Hook's law coefficient. 1 - solid spring. A smaller number loosens edge lengths.",
     gravity: "Coulomb's law coefficient. It's used to repel nodes thus should be negative.",
-    theta: `Theta coefficient from Barnes Hut simulation. Ranged between (0, 1).
+    theta: `Barnes Hut simulation coefficient. Ranges between (0, 1).
       The closer it's to 1 the more nodes algorithm will have to go through.
       Setting it to one makes Barnes Hut simulation no different from brute-force forces calculation (each node is considered).`,
     dragCoeff: `Drag force coefficient. Used to slow down system, thus should be less than 1.
-      The closer it is to 0 the less tight system will be.`,
+      The closer it is to 0 the less tight system will be. The larger it is, the faster the system will stop.`,
     timeStep: "Default time step (dt) for forces integration",
   }
 
