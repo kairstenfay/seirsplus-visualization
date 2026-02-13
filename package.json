@@ -10,7 +10,7 @@
     "ngraph.fromdot": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "styled-components": "^5.0.1",
     "vivagraphjs": "^0.12.0"
   },
